@@ -10,6 +10,7 @@ import nltk, ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 nltk.download('punkt')
 nltk.download('punkt_tab')
+nltk.download('stopwords')
 
 ps=PorterStemmer()
 
