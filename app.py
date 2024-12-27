@@ -4,6 +4,12 @@ import nltk
 import string
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
+import nltk, ssl
+
+
+ssl._create_default_https_context = ssl._create_unverified_context
+nltk.download('punkt')
+nltk.download('punkt_tab')
 
 ps=PorterStemmer()
 
